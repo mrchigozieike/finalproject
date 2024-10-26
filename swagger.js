@@ -9,7 +9,7 @@ app.use("/api-docs", swaggerUIPath.serve, swaggerUIPath.setup(swaggerjsonFilePat
 
 
 // Routes setup
-app.use('/', require('./routes')); // Assuming all routes are bundled in './routes'
+app.use('/', require('./routes')); // all routes are bundled in './routes'
 
 // Set port
 const port = process.env.PORT || 5500;
