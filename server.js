@@ -5,7 +5,7 @@ const mongodb = require('./data/database');
 
 const app = express();
 
-// Swagger setup for API documentation
+//Swagger setup for API documentation
 const swaggerUIPath = require("swagger-ui-express");
 const swaggerjsonFilePath = require("./swagger-output.json");
 app.use("/api-docs", swaggerUIPath.serve, swaggerUIPath.setup(swaggerjsonFilePath));

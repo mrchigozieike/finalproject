@@ -5,7 +5,7 @@ const { validateRole } = require('../middleware/validation');
 // Get all roles
 router.get('/', rolesController.getAllRoles);
 
-// Get a specific role by ID
+// Get a specific role
 router.get('/:id', rolesController.getRoleById);
 
 // Create a new role with validation
