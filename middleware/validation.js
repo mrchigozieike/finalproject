@@ -7,10 +7,9 @@ const handleValidationErrors = (req, res, next) => {
     return res.status(400).json({ errors: errors.array() });
   }
   next();
-  
-};
 
-// Validate user input
+};
+// Validate user input for user
 exports.validateUser = [
   body('username')
     .trim()
